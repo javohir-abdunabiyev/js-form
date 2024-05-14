@@ -110,3 +110,22 @@ button {
 .fill_new_cls {
     color: #EE0004;
 }
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+.file_adder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    width: 100px;
+    height: 100px;
+}

@@ -10,8 +10,6 @@ const success = document.querySelector('.scs')
 
 
 
-
-
 all.forEach(n => {
     n.innerText = inps.length
 })
@@ -45,7 +43,6 @@ form.onsubmit = (event) => {
     let error = false
 
     n_toFill_inps.forEach(inp => {
-        
 
         console.log(count);
 
@@ -56,7 +53,6 @@ form.onsubmit = (event) => {
 
             inp.classList.add('errored_inp')
 
-
             fill_txt.forEach(fill => {
                 fill.classList.add('fill_new_cls')
             })
@@ -66,19 +62,13 @@ form.onsubmit = (event) => {
             sp.classList.add('fill_new_cls')
             sp.innerText  = txt
         })
-
-        } 
-
-        
-
-         
+        }          
     })
 
     if(error) {
         alert('Fill all inputs')
         return
     }
-
 
     if(!error) {
         const user= {}
@@ -91,8 +81,8 @@ form.onsubmit = (event) => {
 
         console.log(user)
         form.reset()
-
-        
     }
     
-}
+};
+
+
